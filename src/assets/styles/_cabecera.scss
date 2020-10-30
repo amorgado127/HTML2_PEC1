@@ -11,7 +11,12 @@
   margin: 0 5vh 0 5vh;
 }
 
+.cabecera h1 {
+  @include titulo-principal;
+  color: $blanco;
+}
 .cabecera h2 {
+  @include titulo-secundario;
   color: $azul-principal;
 }
 
