@@ -1,6 +1,6 @@
 .subrayado {
   border-top: solid 5px $azul-principal;
-  width: 35vh;
+  width: 85%;
   height: 5px;
   margin-left: 15px;
   margin-bottom: 20px;
@@ -8,7 +8,7 @@
 
 @mixin titulo-principal {
   font-family: "Open Sans", sans-serif;
-  font-size: calc(0.55rem + 1vw);
+  font-size: calc(0.5rem + 1vw);
 }
 
 @mixin texto-secundario {
@@ -52,6 +52,7 @@
   //padding: 10px 0px 5px 10px;
   align-items: center;
   color: $color-titulos-principal;
+  margin-left: 15px;
 }
 
 .linea {

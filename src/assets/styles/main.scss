@@ -35,14 +35,14 @@
 
 @import "layouts/home";
 
-.datos {
-  color: black;
-}
-
 @media (max-width: 800px) {
   .container {
     flex-direction: column;
     justify-content: center;
+  }
+
+  .container > div {
+    flex: 0 0 50%;
   }
 
   .cabecera {

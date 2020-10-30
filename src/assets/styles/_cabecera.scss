@@ -15,11 +15,13 @@
 
 .cabecera h1 {
   @include titulo-principal;
+  text-align: center;
   color: $blanco;
 }
 
 .cabecera h2 {
   @include titulo-secundario;
+  text-align: center;
   color: $azul-principal;
 }
 

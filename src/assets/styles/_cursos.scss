@@ -15,7 +15,6 @@
 
 .cursos__detalle {
   display: flex;
-  align-items: center;
 }
 
 .cursos__detalle__centro {
@@ -43,5 +42,4 @@
 
 .cursos__detalle__titulacion h4 {
   @include titulo-4;
-  margin: 10px;
 }
