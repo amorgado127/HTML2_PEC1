@@ -4,9 +4,10 @@
   align-items: center;
   font-family: "Roboto", sans-serif;
   color: #fff;
-  background-image: url(#{$imagen-fondo});
+  //background-image: url(#{$imagen-fondo});
   background-size: 98% auto;
-  background-color: transparent;
+  //background-color: transparent;
+  background-color: blue;
   max-width: 90vw;
   margin: 0 5vh 0 5vh;
 }
