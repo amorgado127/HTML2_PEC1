@@ -1,5 +1,13 @@
 @import "mixins";
 
+/* ------------------------------------*\
+ #SKILLS
+
+ Define las propiedades de las clase skills y 
+ sus clases derivadas. Importa los mixins para 
+ las propiedades comunes con otras clases.
+\*------------------------------------ */
+
 .skills {
   margin-top: 25px;
 }
@@ -15,6 +23,9 @@
   align-items: center;
   margin: 0 10px 10px 10px;
 }
+
+// Genera uyn circulo que contiene los datos del nivel conseguido 
+// en cada skill
 
 .skills__detalle div {
   display: flex;

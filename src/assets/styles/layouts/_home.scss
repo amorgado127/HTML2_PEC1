@@ -1,9 +1,11 @@
+/*
+  Layout de la página únca de la web
+ */
+
 html {
   font-size: $font-size;
   box-sizing: border-box;
 }
-
-/* Extiende el modelo de caja alternativo para ser heredado por el resto de elementos */
 
 *,
 *::before,
@@ -15,4 +17,12 @@ html {
   margin: 0;
   padding: 30px;
   background-color: $cv-background;
+}
+
+.subrayado {
+  border-top: 5px solid $azul-cabecera;
+  width: 85%;
+  height: 5px;
+  margin-left: 15px;
+  margin-bottom: 20px;
 }

@@ -41,7 +41,6 @@
     "stylelint-scss": "^3.18.0"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^5.15.1",
-    "get-google-fonts": "^1.2.2"
+    "@fortawesome/fontawesome-free": "^5.15.1"
   }
 }

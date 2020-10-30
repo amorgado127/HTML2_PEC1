@@ -1,61 +1,91 @@
-.subrayado {
-  border-top: solid 5px $azul-principal;
-  width: 85%;
-  height: 5px;
-  margin-left: 15px;
-  margin-bottom: 20px;
-}
+/**
+ * CONTENTS
+ * 
+ * TOOLS
+ * Mixins...............mixins usados en el resto de clases
+ *  Los tamaños de la fuentes están vinculados al tamaño del portview
+ */
+
+// Mixin con las propiedades de fuente y tamaño de fuente quue ser aplicará
+// a los h1
 
 @mixin titulo-principal {
   font-family: "Open Sans", sans-serif;
   font-size: calc(0.5rem + 1vw);
 }
 
-@mixin texto-secundario {
-  font-family: "Montserrat", sans-serif;
-  font-size: calc(0.1rem + 0.8vw);
-}
+// Mixin con las propiedades de fuente y tamaño de fuente quue ser aplicará 
+// los h2
 
 @mixin titulo-secundario {
   font-family: "Open Sans", sans-serif;
   font-size: calc(0.32rem + 1vw);
 }
 
+// Mixin con las propiedades de fuente y tamaño de fuente quue ser aplicará 
+// a los h3
+
 @mixin titulo-3 {
   font-family: "Open Sans", sans-serif;
   font-size: calc(0.2rem + 0.9vw);
 }
+
+// Mixin con las propiedades de fuente y tamaño de fuente quue ser aplicará 
+// a los h4
 
 @mixin titulo-4 {
   font-family: "Open Sans", sans-serif;
   font-size: calc(0.1rem + 0.9vw);
 }
 
-@mixin icono--grande {
-  color: $azul-principal;
-  font-size: $size-icono-grande;
+// Mixin con las propiedades de fuente y tamaño de fuente que ser aplicará
+// a los campos de texto, en esta web a p, article y div
+
+
+@mixin texto-secundario {
+  font-family: "Montserrat", sans-serif;
+  font-size: calc(0.1rem + 0.8vw);
 }
 
-@mixin icono--pequenyo {
+@mixin icono {
   color: $azul-principal;
-  font-size: $size-icono-pequenyo;
+  //font-size: $size-icono-grande;
 }
+
+@mixin icono {
+  color: $azul-principal;
+  //font-size: $size-icono-pequenyo;
+}
+
+// mixin que define el tipo de caja flex y que se aplicará en
+// la parte de contacto para organizar icono y texto en 
+// los diferentes tipos: telefono, mail, linkdin
 
 @mixin contacto {
   display: flex;
-  //padding: 10px 0px 5px 10px;
   align-items: center;
 }
 
+// mixin que define el tipo de caja flex y que se aplicará en
+// la web a todos los títulos de los diferentes apartados
+
 @mixin titulo {
   display: flex;
-  //padding: 10px 0px 5px 10px;
   align-items: center;
   color: $color-titulos-principal;
   margin-left: 15px;
 }
+ 
+// Mixin con las propiedades comunes a los div
+// que representan la barra de conocimientos de los idiomas
 
-.linea {
-  max-width: 50 vw;
-  padding-left: 10px;
+@mixin idiomas__detalle {
+  @include texto-secundario;
+  background-color: $azul-principal;
+  color: $blanco;
+  text-align: left;
+  margin-left: 20px;
+  max-height: 40px;
+  border-top-right-radius: 1em;
+  border-bottom-right-radius: 1em;
 }

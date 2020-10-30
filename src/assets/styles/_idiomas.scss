@@ -1,9 +1,19 @@
+@import "mixins";
+
+/* ------------------------------------*\
+ #IDIOMAS
+
+ Define las propiedades de las clase idiomas y 
+ sus clases derivadas. Importa los mixins para 
+ las propiedades comunes con otras clases.
+\*------------------------------------ */
+
 .idiomas {
   margin-bottom: 20px;
 }
 
 .idiomas i {
-  @include icono--grande;
+  @include icono;
 }
 
 .idiomas__titulo {
@@ -15,19 +25,8 @@
   margin-left: 10px;
 }
 
-.idiomas__detalle {
-  @include texto-secundario;
-  background-color: $azul-principal;
-  color: $blanco;
-  text-align: left;
-  margin-left: 20px;
-  max-height: 40px;
-  border-top-right-radius: 1em;
-  border-bottom-right-radius: 1em;
-}
-
 .idiomas__catalan {
-  @extend .idiomas__detalle;
+  @include idiomas__detalle;
   max-width: 30vw;
   margin-top: 5px;
   margin-bottom: 5px;
@@ -35,7 +34,7 @@
 }
 
 .idiomas__frances {
-  @extend .idiomas__detalle;
+  @include idiomas__detalle;
   max-width: 14vw;
   margin-top: 5px;
   margin-bottom: 5px;
@@ -43,7 +42,7 @@
 }
 
 .idiomas__ingles {
-  @extend .idiomas__detalle;
+  @include idiomas__detalle;
   max-width: 14vw;
   margin-top: 5px;
   margin-bottom: 5px;

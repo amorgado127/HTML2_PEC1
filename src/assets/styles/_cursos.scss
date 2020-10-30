@@ -1,7 +1,15 @@
 @import "mixins";
 
+/* ------------------------------------*\
+ #CURSOS
+
+ Define las propiedades de las clase cursos y 
+ sus clases derivadas. Importa los mixins para 
+ las propiedades comunes con otras clases.
+\*------------------------------------ */
+
 .cursos i {
-  @include icono--grande;
+  @include icono;
 }
 
 .cursos__titulo {

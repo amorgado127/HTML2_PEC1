@@ -1,5 +1,13 @@
 @import "mixins";
 
+/* ------------------------------------*\
+ #PERSONAL
+
+ Define las propiedades de las clase personal y 
+ sus clases derivadas. Importa los mixins para 
+ las propiedades comunes con otras clases.
+\*------------------------------------ */
+
 .personal {
   background-color: #e5e5e5;
   color: black;
@@ -22,10 +30,6 @@
   text-align: left;
 }
 
-.datos i {
-  @include icono--pequenyo;
-}
-
 .datos__titulo {
   @include titulo-secundario;
   text-align: left;
@@ -43,8 +47,12 @@
   margin-left: 15px;
 }
 
+.datos__nacimiento i {
+  @include icono;
+}
+
 .datos__nacimiento p {
   @include texto-secundario;
-  margin-left: 10px;
+  margin-left: 15px;
   text-align: left;
 }

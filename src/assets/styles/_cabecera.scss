@@ -1,5 +1,15 @@
 @import "mixins";
 
+/* ------------------------------------*\
+  #CABECERA
+
+  Define los parámetros de la cabecera de la página como una caja flex con la
+  foto de cv en una cajas y en la otra el nombre y la titulación.
+  Se incluye el mediaquery para que cuando el ancho baja de 800px cambie la 
+  orientación del flex a columna y situel el texto debajo de la foto.
+  Como fondo se ha colocado una foto.
+\*------------------------------------ */
+
 .cabecera {
   display: flex;
   justify-content: space-around;
@@ -17,17 +27,23 @@
   }
 }
 
+// Define el h1 de la págiona que contiene el nombre del CV
+
 .cabecera h1 {
   @include titulo-principal;
   text-align: center;
   color: $blanco;
 }
 
+// Define el h2 de la págiona que contiene el nombre del CV
+
 .cabecera h2 {
   @include titulo-secundario;
   text-align: center;
   color: $azul-principal;
 }
+
+// Pone los estilos a la foto para que apareza dentro de un circulo.
 
 .cabecera__foto {
   width: 200px;

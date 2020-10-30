@@ -1,10 +1,5 @@
 @use "sass:color";
 
-//$font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-//$font-family-serif: "Georgia", "Times New Roman", serif;
-$font-family-cv-sans-serif: "Montserrat", Helvetica, Arial, Lucida, sans-serif;
-$font-family-cv-serif: "Montserrat", Helvetica, Arial, Lucida, serif;
-
 $font-size: 36px;
 $uoc-corporate: #000078;
 $uoc-masterbrand: #73edff;
@@ -20,5 +15,3 @@ $background-page: $cv-background;
 $separador: $negro;
 $color-titulos-principal: $negro;
 $imagen-fondo:"/assets/images/fondo_cabecera.png";
-$size-icono-grande: 4rem;
-$size-icono-pequenyo: 1rem;
