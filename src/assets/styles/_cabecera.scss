@@ -8,9 +8,13 @@
   background-image: url(#{$imagen-fondo});
   background-size: 98% auto;
   background-color: transparent;
-  //background-color: blue;
   max-width: 90vw;
   margin: 0 5vh 0 5vh;
+
+  @media (max-width: 800px) {
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 
 .cabecera h1 {
@@ -30,4 +34,5 @@
   height: 200 px;
   border-radius: 103px;
   border: 3px solid #668;
+  margin-top: 10px;
 }
