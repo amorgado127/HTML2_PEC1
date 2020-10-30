@@ -1,0 +1,23 @@
+.cabecera {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+  background-image: url(#{$imagen-fondo});
+  background-size: 98% auto;
+  background-color: transparent;
+  max-width: 90vw;
+  margin: 0 5vh 0 5vh;
+}
+
+.cabecera h2 {
+  color: $azul-principal;
+}
+
+.cabecera__foto {
+  width: 200px;
+  height: 200 px;
+  border-radius: 103px;
+  border: 3px solid #668;
+}

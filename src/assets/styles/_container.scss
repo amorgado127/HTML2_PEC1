@@ -1,0 +1,10 @@
+.container {
+  display: flex;
+  align-items: stretch;
+  max-width: 90vw;
+  margin: 0 5vh 0 5vh;
+}
+
+.container > div {
+  flex: 0 0 66%;
+}

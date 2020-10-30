@@ -1,0 +1,42 @@
+@import "mixins";
+
+.cursos i {
+  @include icono;
+}
+
+.cursos__titulo {
+  @include titulo;
+}
+
+.cursos__titulo h2 {
+  @include titulo-secundario;
+  margin-left: 10px;
+}
+
+.cursos__detalle {
+  display: flex;
+  align-items: center;
+}
+
+.cursos__detalle__centro {
+  margin: 10px;
+  flex: 0 0 33%;
+}
+
+.cursos__detalle__centro h3 {
+  @include titulo-3;
+  color: $azul-principal;
+  text-align: left;
+  font-weight: bold;
+}
+
+.cursos__detalle__centro p {
+  @include texto-secundario;
+  text-align: left;
+  color: $gris-texto;
+  font-style: italic;
+}
+
+.cursos__detalle__titulacion {
+  margin: 10px;
+}

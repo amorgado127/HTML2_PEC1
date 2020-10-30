@@ -1,0 +1,51 @@
+.idiomas {
+  margin-bottom: 20px;
+}
+
+.idiomas i {
+  @include icono;
+}
+
+.idiomas__titulo {
+  @include titulo;
+}
+
+.idiomas__titulo h2 {
+  @include titulo-secundario;
+  margin-left: 10px;
+}
+
+.idiomas__detalle {
+  @include texto-secundario;
+  background-color: $azul-principal;
+  color: $blanco;
+  text-align: left;
+  margin-left: 20px;
+  max-height: 40px;
+  border-top-right-radius: 1em;
+  border-bottom-right-radius: 1em;
+}
+
+.idiomas__catalan {
+  @extend .idiomas__detalle;
+  max-width: 30vw;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding-left: 10px;
+}
+
+.idiomas__frances {
+  @extend .idiomas__detalle;
+  max-width: 14vw;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding-left: 10px;
+}
+
+.idiomas__ingles {
+  @extend .idiomas__detalle;
+  max-width: 14vw;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding-left: 10px;
+}

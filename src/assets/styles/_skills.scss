@@ -1,0 +1,29 @@
+@import "mixins";
+
+.skills__detalle {
+  display: flex;
+  align-items: center;
+  margin: 0 10px 10px 10px;
+}
+
+.skills__detalle div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  border: 2px solid $azul-principal;
+  font-size: 14px;
+}
+
+.skills__detalle h3 {
+  @include titulo-3;
+  margin: 15px;
+}
+
+.skills__titulo {
+  text-align: left;
+  margin-left: 15px;
+}

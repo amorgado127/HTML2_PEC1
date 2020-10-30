@@ -1,0 +1,40 @@
+.personal {
+  background-color: #e5e5e5;
+  color: black;
+}
+
+.sobre-mi__titulo {
+  text-align: left;
+  margin-left: 15px;
+}
+
+.sobre-mi__datos {
+  @include texto-secundario;
+  margin-left: 15px;
+  text-align: left;
+}
+
+.datos i {
+  @include icono;
+}
+
+.datos__titulo {
+  text-align: left;
+  margin-left: 15px;
+}
+
+.datos__nombre {
+  margin-left: 15px;
+  text-align: left;
+}
+
+.datos__nacimiento {
+  display: flex;
+  margin-left: 15px;
+}
+
+.datos__nacimiento p {
+  @include texto-secundario;
+  margin-left: 10px;
+  text-align: left;
+}

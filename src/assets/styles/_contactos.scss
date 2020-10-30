@@ -1,0 +1,38 @@
+@import "mixins";
+
+.contacto i {
+  @include icono;
+  margin: 2px;
+}
+
+.contacto p {
+  margin: 2px;
+}
+
+.contacto__movil {
+  display: flex;
+  padding-left: 10px;
+  margin-top: 15px;
+  align-items: center;
+}
+
+.contacto__titulo {
+  text-align: left;
+  margin-left: 15px;
+}
+
+.contacto__mail {
+  @include contacto;
+}
+
+.contacto__twitter {
+  @include contacto;
+}
+
+.contacto__linkedin {
+  @include contacto;
+}
+
+.contacto__web {
+  @include contacto;
+}

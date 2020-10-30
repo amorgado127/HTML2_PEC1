@@ -1,0 +1,56 @@
+/**
+ * Import variables
+ */
+
+@import "variables";
+@import "cabecera";
+@import "container";
+@import "trabajos";
+@import "estudios";
+@import "cursos";
+@import "contactos";
+@import "idiomas";
+@import "skills";
+@import "personal";
+@import "interes";
+@import "mixins";
+@import "@fortawesome/fontawesome-free/css/all.css";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap");
+
+/**
+ * Import npm dependencies
+ * see: https://en.parceljs.org/module_resolution.html
+ * see commented examples below
+ */
+
+// @import "some-node-module";di
+// @import "@some-company/some-node-module";
+
+/**
+ * Import layouts
+ * It's a best practice to use a partial for each page
+ */
+
+@import "layouts/home";
+
+.datos {
+  color: black;
+}
+
+@media (max-width: 800px) {
+  .container {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .cabecera {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+/**
+ * Do NOT include anything else in this file!
+ */

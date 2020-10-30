@@ -1,0 +1,47 @@
+@import "mixins";
+
+.estudios i {
+  @include icono;
+}
+
+.estudios__titulo {
+  @include titulo;
+}
+
+.estudios__titulo h2 {
+  @include titulo-secundario;
+  margin-left: 10px;
+}
+
+.estudios__detalle {
+  display: flex;
+}
+
+.estudio__detalle h3 {
+  @include titulo-3;
+  text-align: left;
+  font-weight: bold;
+}
+
+.estudios__detalle__centro {
+  margin: 10px;
+  flex: 0 0 33%;
+}
+
+.estudios__detalle__centro h3 {
+  @include titulo-3;
+  color: $azul-principal;
+  text-align: left;
+  font-weight: bold;
+}
+
+.estudios__detalle__centro p {
+  @include texto-secundario;
+  text-align: left;
+  color: $gris-texto;
+  font-style: italic;
+}
+
+.estudios__detalle__titulacion {
+  margin: 10px;
+}

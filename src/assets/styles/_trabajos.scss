@@ -1,0 +1,53 @@
+@import "mixins";
+
+.trabajos i {
+  @include icono;
+}
+
+.trabajos__titulo {
+  @include titulo;
+}
+
+.trabajos__titulo h2 {
+  @include titulo-secundario;
+  margin-left: 10px;
+}
+
+.trabajos__detalle {
+  display: flex;
+}
+
+.trabajos__detalle h3 {
+  @include titulo-3;
+  text-align: left;
+  font-weight: bold;
+}
+
+.trabajos__detalle__puesto {
+  margin: 10px;
+  flex: 0 0 33%;
+}
+
+.trabajos__detalle__puesto h3 {
+  @include titulo-3;
+  color: $azul-principal;
+  text-align: left;
+  font-weight: bold;
+}
+
+.trabajos__detalle__puesto p {
+  @include texto-secundario;
+  text-align: left;
+  color: $gris-texto;
+  font-style: italic;
+}
+
+.trabajos__detalle__empresa {
+  margin: 10px;
+}
+
+.trabajos__detalle__empresa article {
+  @include texto-secundario;
+  text-align: left;
+  color: $gris-texto;
+}

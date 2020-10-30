@@ -1,0 +1,54 @@
+.subrayado {
+  border-top: solid 5px $azul-principal;
+  width: 35vh;
+  height: 5px;
+  margin-left: 15px;
+  margin-bottom: 20px;
+}
+
+@mixin titulo-principal {
+  font-family: "Open Sans", sans-serif;
+  font-size: calc(0.55rem + 1vw);
+}
+
+@mixin texto-secundario {
+  font-family: "Montserrat", sans-serif;
+  font-size: calc(0.1rem + 0.8vw);
+}
+
+@mixin titulo-secundario {
+  font-family: "Open Sans", sans-serif;
+  font-size: calc(0.32rem + 1vw);
+}
+
+@mixin titulo-3 {
+  font-family: "Open Sans", sans-serif;
+  font-size: calc(0.2rem + 0.9vw);
+}
+
+@mixin titulo-4 {
+  font-family: "Open Sans", sans-serif;
+  font-size: calc(0.1rem + 0.9vw);
+}
+
+@mixin icono {
+  color: $azul-principal;
+}
+
+@mixin contacto {
+  display: flex;
+  //padding: 10px 0px 5px 10px;
+  align-items: center;
+}
+
+@mixin titulo {
+  display: flex;
+  //padding: 10px 0px 5px 10px;
+  align-items: center;
+  color: $color-titulos-principal;
+}
+
+.linea {
+  max-width: 50 vw;
+  padding-left: 10px;
+}
