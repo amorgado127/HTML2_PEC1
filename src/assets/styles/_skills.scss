@@ -1,5 +1,15 @@
 @import "mixins";
 
+.skills {
+  margin-top: 25px;
+}
+
+.skills__titulo {
+  @include titulo-secundario;
+  text-align: left;
+  margin-left: 15px;
+}
+
 .skills__detalle {
   display: flex;
   align-items: center;
@@ -21,9 +31,4 @@
 .skills__detalle h3 {
   @include titulo-3;
   margin: 15px;
-}
-
-.skills__titulo {
-  text-align: left;
-  margin-left: 15px;
 }

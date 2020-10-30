@@ -1,8 +1,16 @@
-.interes__datos {
-  margin-left: 15px;
+@import "mixins";
+
+.interes {
+  margin-top: 25px;
 }
 
 .interes__cabecera {
+  @include titulo-secundario;
   text-align: left;
+  margin-left: 15px;
+}
+
+.interes__datos {
+  @include texto-secundario;
   margin-left: 15px;
 }

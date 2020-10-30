@@ -1,24 +1,27 @@
 @import "mixins";
 
+.contacto {
+  margin-top: 25px;
+}
+
 .contacto i {
-  @include icono;
-  margin: 2px;
+  @include icono--pequenyo;
+  margin-left: 10px;
 }
 
 .contacto p {
+  @include texto-secundario;
   margin: 2px;
 }
 
-.contacto__movil {
-  display: flex;
-  padding-left: 10px;
-  margin-top: 15px;
-  align-items: center;
-}
-
 .contacto__titulo {
+  @include titulo-secundario;
   text-align: left;
   margin-left: 15px;
+}
+
+.contacto__movil {
+  @include contacto;
 }
 
 .contacto__mail {

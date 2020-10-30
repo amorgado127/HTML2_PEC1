@@ -1,7 +1,7 @@
 @import "mixins";
 
 .cursos i {
-  @include icono;
+  @include icono--grande;
 }
 
 .cursos__titulo {
@@ -38,5 +38,10 @@
 }
 
 .cursos__detalle__titulacion {
+  margin: 10px;
+}
+
+.cursos__detalle__titulacion h4 {
+  @include titulo-4;
   margin: 10px;
 }

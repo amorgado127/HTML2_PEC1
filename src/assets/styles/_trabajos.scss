@@ -1,7 +1,7 @@
 @import "mixins";
 
 .trabajos i {
-  @include icono;
+  @include icono--grande;
 }
 
 .trabajos__titulo {
@@ -38,6 +38,7 @@
 .trabajos__detalle__puesto p {
   @include texto-secundario;
   text-align: left;
+ 
   color: $gris-texto;
   font-style: italic;
 }
@@ -49,5 +50,6 @@
 .trabajos__detalle__empresa article {
   @include texto-secundario;
   text-align: left;
+  margin-right: 15px;
   color: $gris-texto;
 }

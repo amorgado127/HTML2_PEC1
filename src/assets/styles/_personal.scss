@@ -1,9 +1,16 @@
+@import "mixins";
+
 .personal {
   background-color: #e5e5e5;
   color: black;
 }
 
+.datos {
+  margin-top: 25px;
+}
+
 .sobre-mi__titulo {
+  @include titulo-secundario;
   text-align: left;
   margin-left: 15px;
 }
@@ -11,19 +18,22 @@
 .sobre-mi__datos {
   @include texto-secundario;
   margin-left: 15px;
+  margin-right: 15px;
   text-align: left;
 }
 
 .datos i {
-  @include icono;
+  @include icono--pequenyo;
 }
 
 .datos__titulo {
+  @include titulo-secundario;
   text-align: left;
   margin-left: 15px;
 }
 
 .datos__nombre {
+  @include texto-secundario;
   margin-left: 15px;
   text-align: left;
 }

@@ -31,8 +31,14 @@
   font-size: calc(0.1rem + 0.9vw);
 }
 
-@mixin icono {
+@mixin icono--grande {
   color: $azul-principal;
+  font-size: $size-icono-grande;
+}
+
+@mixin icono--pequenyo {
+  color: $azul-principal;
+  font-size: $size-icono-pequenyo;
 }
 
 @mixin contacto {

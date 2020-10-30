@@ -1,7 +1,7 @@
 @import "mixins";
 
 .estudios i {
-  @include icono;
+  @include icono--grande;
 }
 
 .estudios__titulo {
@@ -44,4 +44,8 @@
 
 .estudios__detalle__titulacion {
   margin: 10px;
+}
+
+.estudios__detalle__titulacion h4 {
+  @include titulo-4;
 }
