@@ -14,7 +14,7 @@
   font-size: calc(0.5rem + 1vw);
 }
 
-// Mixin con las propiedades de fuente y tamaño de fuente quue ser aplicará 
+// Mixin con las propiedades de fuente y tamaño de fuente quue ser aplicará
 // los h2
 
 @mixin titulo-secundario {
@@ -22,7 +22,7 @@
   font-size: calc(0.32rem + 1vw);
 }
 
-// Mixin con las propiedades de fuente y tamaño de fuente quue ser aplicará 
+// Mixin con las propiedades de fuente y tamaño de fuente quue ser aplicará
 // a los h3
 
 @mixin titulo-3 {
@@ -30,7 +30,7 @@
   font-size: calc(0.2rem + 0.9vw);
 }
 
-// Mixin con las propiedades de fuente y tamaño de fuente quue ser aplicará 
+// Mixin con las propiedades de fuente y tamaño de fuente quue ser aplicará
 // a los h4
 
 @mixin titulo-4 {
@@ -40,7 +40,6 @@
 
 // Mixin con las propiedades de fuente y tamaño de fuente que ser aplicará
 // a los campos de texto, en esta web a p, article y div
-
 
 @mixin texto-secundario {
   font-family: "Montserrat", sans-serif;
@@ -58,7 +57,7 @@
 }
 
 // mixin que define el tipo de caja flex y que se aplicará en
-// la parte de contacto para organizar icono y texto en 
+// la parte de contacto para organizar icono y texto en
 // los diferentes tipos: telefono, mail, linkdin
 
 @mixin contacto {
@@ -75,7 +74,7 @@
   color: $color-titulos-principal;
   margin-left: 15px;
 }
- 
+
 // Mixin con las propiedades comunes a los div
 // que representan la barra de conocimientos de los idiomas
 
